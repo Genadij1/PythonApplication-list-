@@ -1,7 +1,9 @@
 
 import random
 
-list = [random.randint(-10,10) for i in range(12)]
+list = []
+for i in range (13):
+    list.append(random.randint(-10, 10))
 print(list)
 paired=0
 for i in list:
