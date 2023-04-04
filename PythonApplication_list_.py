@@ -1,18 +1,18 @@
 
 import random
-from re import I
-
-list = [random.randint(-20,20) for i in range (12)]
+list = []
+for i in range (13):
+    list.append(random.randint(-10, 10))
 print(list)
 par=0
 for i in list:
     if i%2==0:
         par+=i
-        print('par', par)
-print()
+print('par', par)
+
 odd=0
 for i in list:
     if i%2!=0:
         odd+=i
-        print('odd', odd)
+print('odd', odd)
 
