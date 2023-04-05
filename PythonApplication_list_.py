@@ -1,5 +1,7 @@
 
+from pydoc import importfile
 import random
+from re import I
 list = []
 for i in range (13):
     list.append(random.randint(-10, 10))
@@ -25,3 +27,13 @@ for index, i in enumerate(list):
         prod*=i
         print(i)
 print('prod', prod)
+prod_min_max=1
+min_n = min(list)
+max_n = max(list)
+print(min_n)
+print(max_n)
+while min_n < i:
+    print(i)
+    break
+
+
