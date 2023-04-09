@@ -27,13 +27,7 @@ for index, i in enumerate(list):
         prod*=i
         print(i)
 print('prod', prod)
-prod_min_max=1
-min_n = min(list)
-max_n = max(list)
-print(min_n)
-print(max_n)
-while min_n < i:
-    print(i)
-    break
+list2 = list[min(list):max(list)]
+print(list2)
 
 
