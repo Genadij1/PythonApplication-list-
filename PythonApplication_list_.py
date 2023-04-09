@@ -1,6 +1,5 @@
 
 import random
-
 list = []
 for i in range (13):
     list.append(random.randint(-10, 10))
