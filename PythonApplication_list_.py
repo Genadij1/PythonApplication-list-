@@ -6,7 +6,7 @@ for i in range (13):
 print(list)
 paired=0
 for i in list:
-    if i>0 and i%2==0:
+    if i%2==0:
         paired=i
         print('paired', paired)
 print()
