@@ -1,29 +1,25 @@
 
 import random
-list = []
-for i in range (13):
-    list.append(random.randint(-10, 10))
-print(list)
-paired=0
-for i in list:
-    if i%2==0:
-        paired=i
-        print('paired', paired)
-print()
-odd=0
-for i in list:
-    if i>0 and i%2 != 0:
-        odd=i
-        print('odd', odd)
-print()
-neg=0
-for i in list:
-    if i<0:
-        neg=i
-        print('neg', neg)
-print()
-pos=0
-for i in list:
-    if i>0:
-        pos=i
-        print('pos', pos)
+random_list = [random.randint(-10, 10) for i in range(10)]
+
+even_numbers = []
+odd_numbers = []
+negative_numbers = []
+positive_numbers = []
+#func
+for number in random_list:
+    if number % 2 == 0:
+        even_numbers.append(number)
+    else:
+        odd_numbers.append(number)
+    if number < 0:
+        negative_numbers.append(number)
+    elif number > 0:
+        positive_numbers.append(number)
+
+
+print("Випадковий список:", random_list)
+print("Парні числа:", even_numbers)
+print("Непарні числа:", odd_numbers)
+print("Від'ємні числа:", negative_numbers)
+print("Додатні числа:", positive_numbers)
